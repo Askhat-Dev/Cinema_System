@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Заголовок страницы</title>
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<link rel="stylesheet" href="{% static 'js/bootstrap.min.js' %}" type="text/js">
+<script src="{% static 'holder.js' %}"></script>
+</head>
+<body>
+<nav class = "navbar navbar-expand-md navbar-light bg-light">
+<a href="http://127.0.0.1:8000" class="navbar-brand">Cinema System</a>
+</div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mx-auto">
+</li>
+<li class="nav-item active">
+<a href="http://127.0.0.1:8000/" class="nav-link">Главная</a>
+</li>
+<li class="nav-item ">
+<a href="http://127.0.0.1:8000/accounts/login/" class="nav-link">Авторизация</a>
+</li>
+<li class="nav-item ">
+<a href="http://127.0.0.1:8000/MainPage/rating/" class="nav-link">Рейтинг</a>
+</li>
+<li class="nav-item ">
+<a href="http://127.0.0.1:8000/MainPage/contacts/" class="nav-link">Контакты</a>
+</li>
+</ul>
+<form class="form-inline">
+<input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+<button class="btn btn-light my-sm-0" type="submit">Поиск</button>
+</form>
+</div>
+    </div>
+</nav>
+</div>
+
+<div class="container" align="left">
+    <div class="row">
+        <div class=" navbar-brand my-4 "> <img src="{% static 'img/logo.png' %}" style="width:200px; height: 240px;"></div>
+        <div class="col-md-4 my-5" class="navbar-brand">Логин
+            <hr align="left" width="800" size="2" color="#FFFFFF" /><br/>
+            <div>Почта</div>
+            <hr align="left" width="800" size="2" color="#FFFFFF" /><br/>
+            <div>Номер телефона</div>
+            <hr align="left" width="800" size="2" color="#FFFFFF" /><br/>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

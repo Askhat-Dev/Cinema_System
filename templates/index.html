@@ -1,0 +1,37 @@
+{% extends "extends_huynya.html" %}
+{% load staticfiles %}
+{% block content %}
+{% for i in num_books %}
+<div class="container">
+    <div class="row">
+        <a href="http://127.0.0.1:8000/MainPage/film1/" class="col-md-4 my-4 navbar-brand" style="color:#FFFFFF"><img src="{% static 'img/1.jpg' %}"  style="width:100%"></a>
+        <div class="col-md-4 my-4" ><a href="http://127.0.0.1:8000/MainPage/film1/" class="navbar-brand"style="color:#0000СС"><h4>{{ i.title }}</h4></a>
+            <div style="color: #C0C0C0">{{i.summary}}</div>
+        </div>
+        <hr align="left" width="800" size="2" color="#FFFFFF" /><br/>
+    </div>
+</div>
+
+<style>
+       body {
+margin: 0px;
+padding: 0px;
+min-width: 320px;
+position: relative;
+overflow-x: hidden;
+
+background-image: url({% static 'img/fon.jpg' %});
+background-position: top center;
+background-attachment: fixed;
+min-height: 668px;
+position: relative;
+-webkit-background-size: cover;
+background-size: cover;
+}
+    </style>
+
+{% endfor %}
+{% endblock %}
+</body>
+
+
